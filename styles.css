@@ -299,7 +299,7 @@ svg{
 /* ------------------/ Navigation ---------------------------- */
 /* -------------------------- Hero Section ------------------ */
 .hero{
-    background:url('../images/IMG_3342-p-800.jpeg') no-repeat;
+    background:url('images/IMG_3342-p-800.jpeg') no-repeat;
     background-size: cover;
     height: 60vh;
     display: flex;
