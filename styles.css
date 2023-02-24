@@ -300,7 +300,7 @@ svg{
 /* ------------------/ Navigation ---------------------------- */
 /* -------------------------- Hero Section ------------------ */
 .hero{
-    background-image: var(--bg-hero-sm) no-repeat;
+    background: var(--bg-hero-sm) no-repeat;
     background-size: cover;
     height: 70vh;
     display: flex;
