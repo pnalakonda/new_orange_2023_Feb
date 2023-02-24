@@ -299,7 +299,7 @@ svg{
 /* ------------------/ Navigation ---------------------------- */
 /* -------------------------- Hero Section ------------------ */
 .hero{
-    background:url('/images/IMG_3342-p-800.jpeg') no-repeat;
+    background:url('./images/IMG_3342-p-800.jpeg') no-repeat;
     background-size: cover;
     height: 70vh;
     display: flex;
@@ -390,7 +390,7 @@ svg{
       
     }
     .hero{
-        background-image:url('/images/IMG_3342-p-1600.jpeg');
+        background-image:url('./images/IMG_3342-p-1600.jpeg');
         height: 80vh;
         display: flex;
         justify-content: center;
