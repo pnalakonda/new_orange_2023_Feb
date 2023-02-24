@@ -28,7 +28,8 @@
     --bg-gradient-ornage: linear-gradient(toright, #ff7d0b, #ffa20b);
 
     /* images */
-
+    --bg-hero-sm: url('./images/IMG_3342-p-800.jpeg');
+    --bg-hero-xl: url('./images/IMG_3342-p-1600.jpeg');
 }
 
 
@@ -299,7 +300,7 @@ svg{
 /* ------------------/ Navigation ---------------------------- */
 /* -------------------------- Hero Section ------------------ */
 .hero{
-    background:url('./images/IMG_3342-p-800.jpeg') no-repeat;
+    background: var(--bg-hero-sm)
     background-size: cover;
     height: 70vh;
     display: flex;
@@ -390,7 +391,7 @@ svg{
       
     }
     .hero{
-        background-image:url('./images/IMG_3342-p-1600.jpeg');
+        background:background: var(--bg-hero-l);
         height: 80vh;
         display: flex;
         justify-content: center;
