@@ -30,6 +30,7 @@
     /* images */
     --bg-hero-sm: url('./images/IMG_3342-p-800.jpeg');
     --bg-hero-l: url('./images/IMG_3342-p-1600.jpeg');
+    --bg-features: url('./images/stars_nobg.png')
 }
 
 
@@ -110,6 +111,9 @@ svg{
 .justify-center{
     justify-content: center;
 }
+.flex-align-center{
+    align-items: center;
+}
 
 .text-white{
     color: var(--text-white);
@@ -168,6 +172,11 @@ svg{
     margin-left: auto;
     margin-right: auto;
 }
+.py-1{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .py-2{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -208,6 +217,10 @@ svg{
 .cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
     column-gap: 10px;
+}
+
+.w-100{
+    width: 100%;
 }
 
 /* .link{
@@ -302,6 +315,7 @@ svg{
 .hero{
     background: var(--bg-hero-sm) no-repeat;
     background-size: cover;
+    background-position: right;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -309,16 +323,18 @@ svg{
 }
 .hero-text{
     padding: 5px 20px;
-    background: hsla(0, 0%, 32%, 0.79);
+    background: hsla(0, 0%, 32%, 0.59);
  
 }
 
 .hero-text h1{
     padding-bottom: 5px; 
+    line-height: 2.5rem;
+    font-size: 1.8rem;
 } 
 .hero-text p{
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     letter-spacing: 1.2px;
 }
 /* ----------------------- /Hero Section  ----------------------------*/
@@ -326,16 +342,20 @@ svg{
 /* ------------------------ Features -------------------------------- */
 
 #features{
-    padding: 2em 0em;
+    padding: 2em 1em;
     /* background: #0a1ca1; */
+    background: #fcfcfc;
 }
+
+#features .grid{
+    grid-gap: 2em;
+}
+
 .feature{
-    /* border-bottom: solid 1px #f69038;*/
-    /* background: #808291;  */
     padding: 25px;
-    /* padding-top: 10px;
-    padding-bottom: 20px; */
-    margin: 5px 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    /* margin: 5px 5px; */
 }
 .feature img{
     width: 50px;
@@ -343,6 +363,74 @@ svg{
     
 }
 /* ------------------------ / Features -------------------------------- */
+/* ------------------------  Services -------------------------------- */
+#services{
+    padding: 2em 0em;
+}
+#services .grid{
+    grid-gap: 5em;
+}
+.service{
+    background-color: #333333;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+
+}
+
+.service-img-container{
+    position:relative;
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+.service img{
+    width: 100%;
+    
+}
+.service-name{
+    padding-left: 20px;
+    color:#fcfcfc;
+}
+.service-description {
+    color:#e6e5e5;
+    padding: 10px 20px 20px 20px;
+    line-height: 30px;
+}
+/* ------------------------  /Services -------------------------------- */
+/* ------------------------  Location -------------------------------- */
+#location{
+    text-align: center;
+}
+#location iframe{
+    width: 100%;
+}
+
+.Location-address{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    align-items:center;
+    justify-content:center;
+    flex-wrap: nowrap;
+    
+}
+address{
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+}
+address a{
+    color:rgb(246, 255, 255)
+}
+
+/* ------------------------  /Location -------------------------------- */
+
+/* -------------------------footer -------------------------------------*/
+footer p{
+    color: var(--text-gray);
+    background: var(--bg-ornage);
+    text-align: center;
+
+}
+/* -------------------------footer -------------------------------------*/
 
 /* ------------------- Media Query ------------------------ */
 /* for large screen sm (640px) */
@@ -380,7 +468,6 @@ svg{
         align-items: center;
         justify-content:right;
         flex-wrap: nowrap;
-        
     }
     .navbar-toggle{
         display: none;
@@ -398,6 +485,20 @@ svg{
         align-items: end;
         padding-bottom: 10px;
     }
+    .md-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 30px;
+    }
+
+    .md-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 25px;
+    }
+
+    .md-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: 15px;
+    }
     /* #nav .flex-initial ul button{
         display: inline-block !important;
     } */
@@ -406,6 +507,14 @@ svg{
 
 /* for large screen lg (1024px) */
 @media (min-width: 1024px) {
+    .lg-text-center{
+        text-align: center;
+    }
+    
+    .px-lg-5{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     h1, .h1 {
         font-size: 2.5rem;
         margin-top: 0;
@@ -416,7 +525,8 @@ svg{
       }
     
     h2, .h2 {
-      font-size: calc(1.255rem + 0.06vw);
+      /* font-size: calc(1.255rem + 0.06vw); */
+      font-size: 2rem
     }
     
     h3, .h3 {
@@ -475,6 +585,13 @@ svg{
     .hero-text p{
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    /* ------------------------------- Service Section ----------------------------------- */
+    .service img{
+        width: 100%;
+        /* border-radius: 15px; */
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
     .lg-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
