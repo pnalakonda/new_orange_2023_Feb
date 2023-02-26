@@ -32,7 +32,9 @@
     --bg-hero-sm: url('./images/IMG_3342-p-800.jpeg');
     --bg-hero-l: url('./images/IMG_3342-p-1600.jpeg');
     --bg-hero-xl: url('./images/IMG_3342-p-2600.jpeg');
-    --bg-features: url('./images/stars_nobg.png')
+    --bg-features: url('./images/stars_nobg.png');
+    --bg-programs: url('./images/Backgroud_img.png');
+    --bg-programs-des: url('./images/program-summary.png');
 }
 
 
@@ -381,7 +383,8 @@ svg{
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background: url('./images/Backgroud_img.png') ;
+    background: var(--bg-programs);
+    /* background: url('./images/Backgroud_img.png') ; */
     background-size: cover;
     width: 100%;
     padding: 20px;
@@ -412,7 +415,7 @@ svg{
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
-    background: #ef0d0ddc;
+    background: #07ecd5dc;
     color:#f6f6f6;
 }
 .item4{
@@ -482,7 +485,8 @@ svg{
 
 .program-description{
     width: 100%;
-    background: url('./images/program-summary.png');
+    background: var(--bg-programs-des);
+    /* background: url('./images/program-summary.png'); */
     background-size: cover;
 }
 
