@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto+Condensed&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto+Condensed&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@200;300;400;500;700&family=Roboto+Condensed&display=swap');
 
 :root{
     /* text colors */
@@ -30,6 +31,7 @@
     /* images */
     --bg-hero-sm: url('./images/IMG_3342-p-800.jpeg');
     --bg-hero-l: url('./images/IMG_3342-p-1600.jpeg');
+    --bg-hero-xl: url('./images/IMG_3342-p-2600.jpeg');
     --bg-features: url('./images/stars_nobg.png')
 }
 
@@ -48,6 +50,7 @@ html:focus-within {
 html,
 body{
     /* height: 100%; */
+    /* background: #fff; */
 }
 
 body {
@@ -118,7 +121,7 @@ svg{
 .text-white{
     color: var(--text-white);
 }
-.text-dard{
+.text-dark{
     color: var(--text-dark);
 }
 .text-orange{
@@ -324,9 +327,7 @@ svg{
 .hero-text{
     padding: 5px 20px;
     background: hsla(0, 0%, 32%, 0.59);
- 
 }
-
 .hero-text h1{
     padding-bottom: 5px; 
     line-height: 2.5rem;
@@ -344,7 +345,7 @@ svg{
 #features{
     padding: 2em 1em;
     /* background: #0a1ca1; */
-    background: #fcfcfc;
+    /* background: #fcfcfc; */
 }
 
 #features .grid{
@@ -363,9 +364,138 @@ svg{
     
 }
 /* ------------------------ / Features -------------------------------- */
+
+/* ------------------------  Programs -------------------------------- */
+#programs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    height: 100%;
+    }
+
+.all-programs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: url('./images/Backgroud_img.png') ;
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    /* padding-bottom: 20px; */
+    font-family: 'Patrick Hand', cursive;
+    }
+    .all-programs h2{
+        font-size: 1.4rem;
+    }
+.item1{
+    /* background: #e1301c; */
+    color:#f6f6f6;
+    text-align: center;
+    margin-left: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.item2{
+    /* background: #e1301c; */
+    color:#f6f6f6;
+    text-align: center;
+}
+.item3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #ef0d0ddc;
+    color:#f6f6f6;
+}
+.item4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #d83b2ace;
+    color:#f6f6f6;
+}
+.item5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #0b26eedc;
+    color:#f6f6f6;
+}
+.item6{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #04a250db;
+    color:#f6f6f6;
+    
+}
+.item7{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #ffe203ef;
+    color:#353434;
+}
+.item8{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #3d0557cf;
+    color:#f6f6f6;
+
+}
+.item9{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  
+    background: #e70cebb7;
+    color:#f6f6f6;
+    text-align: center;
+}
+
+.program-description{
+    width: 100%;
+    background: url('./images/program-summary.png');
+    background-size: cover;
+}
+
+/* ------------------------  /Programs -------------------------------- */
 /* ------------------------  Services -------------------------------- */
-#services{
+/* #services{
     padding: 2em 0em;
+} */
+#services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minimax(400px,1fr));
+    /* grid-gap: 5em; */
+    padding: 20px;
 }
 #services .grid{
     grid-gap: 5em;
@@ -477,14 +607,7 @@ footer p{
       text-align:right;
       
     }
-    .hero{
-        background: var(--bg-hero-l) no-repeat; 
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        padding-bottom: 10px;
-    }
+    
     .md-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 30px;
@@ -507,6 +630,17 @@ footer p{
 
 /* for large screen lg (1024px) */
 @media (min-width: 1024px) {
+    .hero{
+        background: var(--bg-hero-xl) no-repeat; 
+        background-size: cover;
+        background-position: right;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 10px;
+    }
+
     .lg-text-center{
         text-align: center;
     }
@@ -586,6 +720,29 @@ footer p{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+    /* ------------------------------- Programs Section ----------------------------------- */
+    #programs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+    }
+    .all-programs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        background: url('./images/Backgroud_img.png') ;
+        background-size: cover;
+        width: 100%;
+        padding: 20px;
+        /* padding-bottom: 20px; */
+        font-family: 'Patrick Hand', cursive;
+        }
     /* ------------------------------- Service Section ----------------------------------- */
     .service img{
         width: 100%;
@@ -622,3 +779,8 @@ footer p{
 }
 
 /* ------------------- /Media Query ------------------------ */
+
+
+
+
+  
